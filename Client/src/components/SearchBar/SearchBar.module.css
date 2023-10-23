@@ -1,0 +1,141 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.32);
+  width: 50%;
+  margin: auto;
+  margin-top: 0px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: row;
+}
+
+.buttonAdd {
+  appearance: button;
+  background-color: #435d6a;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 90%;
+  margin: 0.5em;
+}
+
+.buttonRandom {
+  appearance: button;
+  background-color: #435d6a;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 550;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0.5em;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 90%;
+}
+
+.buttonAdd:main,
+.buttonAdd:focus {
+  user-select: auto;
+}
+
+.buttonAdd:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.buttonAdd:disabled {
+  cursor: auto;
+}
+
+.buttonRandom:main,
+.buttonRandom:focus {
+  user-select: auto;
+}
+
+.buttonRandom:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+.buttonRandom:disabled {
+  cursor: auto;
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+    max-width: 40%;
+  }
+  .buttonContainer {
+    flex-direction: column;
+  }
+  .input {
+    margin-top: 1em;
+    margin-bottom: 0;
+  }
+  .buttonAdd {
+    margin-top: 0.5em;
+  }
+  .buttonRandom {
+    margin-top: 0.1em;
+  }
+}
+
+@media (max-width: 600px) {
+  .buttonAdd {
+    font-size: 12px;
+  }
+  .buttonRandom {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 400px) {
+  .input {
+    max-width: 100%;
+  }
+}

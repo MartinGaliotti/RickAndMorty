@@ -1,0 +1,21 @@
+.container {
+  text-align: center;
+}
+
+.textContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.name {
+  margin-bottom: 0em;
+}
+
+.origin {
+  margin-bottom: 1em;
+}
+
+.img {
+  border-radius: 5em;
+}
